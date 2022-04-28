@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220428 20:04:45.509" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.17 on linux2)">
+<suite source="/home/wiz/Desktop/robot_project/mtestfolder/test individually" id="s1" name="Test Individually">
+<suite source="/home/wiz/Desktop/robot_project/mtestfolder/test individually/test 28" id="s1-s1" name="Test 28">
+<suite source="/home/wiz/Desktop/robot_project/mtestfolder/test individually/test 28/4" id="s1-s1-s1" name="4">
+<suite source="/home/wiz/Desktop/robot_project/mtestfolder/test individually/test 28/4/testsuit2804.robot" id="s1-s1-s1-s1" name="Testsuit2804">
+<test id="s1-s1-s1-s1-t1" name="FirstSeleniumTest">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https:google.com</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220428 20:04:45.666" level="INFO">Opening browser 'Chrome' to base url 'https:google.com'.</msg>
+<status status="PASS" endtime="20220428 20:04:51.907" starttime="20220428 20:04:45.665"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" endtime="20220428 20:04:51.910" starttime="20220428 20:04:51.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name=q</arg>
+<arg>Scoobydoo image</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220428 20:04:51.911" level="INFO">Typing text 'Scoobydoo image' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20220428 20:04:52.053" starttime="20220428 20:04:51.911"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220428 20:04:52.055" level="INFO">Sending key(s) (u'ENTER',) to name=q element.</msg>
+<msg timestamp="20220428 20:04:52.348" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20220428 20:04:52.348" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" endtime="20220428 20:04:53.857" starttime="20220428 20:04:52.054"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220428 20:04:59.858" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20220428 20:04:59.859" starttime="20220428 20:04:53.857"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220428 20:04:59.925" starttime="20220428 20:04:59.860"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220428 20:04:59.926" level="INFO">Test completed</msg>
+<status status="PASS" endtime="20220428 20:04:59.927" starttime="20220428 20:04:59.925"/>
+</kw>
+<status status="PASS" endtime="20220428 20:04:59.928" starttime="20220428 20:04:45.664"/>
+</test>
+<status status="PASS" endtime="20220428 20:04:59.930" starttime="20220428 20:04:45.555"/>
+</suite>
+<status status="PASS" endtime="20220428 20:04:59.935" starttime="20220428 20:04:45.552"/>
+</suite>
+<status status="PASS" endtime="20220428 20:04:59.939" starttime="20220428 20:04:45.549"/>
+</suite>
+<status status="PASS" endtime="20220428 20:04:59.941" starttime="20220428 20:04:45.527"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Test Individually" pass="1">Test Individually</stat>
+<stat fail="0" skip="0" id="s1-s1" name="Test 28" pass="1">Test Individually.Test 28</stat>
+<stat fail="0" skip="0" id="s1-s1-s1" name="4" pass="1">Test Individually.Test 28.4</stat>
+<stat fail="0" skip="0" id="s1-s1-s1-s1" name="Testsuit2804" pass="1">Test Individually.Test 28.4.Testsuit2804</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
