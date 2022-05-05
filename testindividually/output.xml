@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220505 11:06:23.314" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.17 on linux2)">
+<suite source="/home/wiz/git/Scoobydoo/test individually" id="s1" name="Test Individually">
+<suite source="/home/wiz/git/Scoobydoo/test individually/test28" id="s1-s1" name="Test28">
+<suite source="/home/wiz/git/Scoobydoo/test individually/test28/4" id="s1-s1-s1" name="4">
+<suite source="/home/wiz/git/Scoobydoo/test individually/test28/4/testsuit2804.robot" id="s1-s1-s1-s1" name="Testsuit2804">
+<test id="s1-s1-s1-s1-t1" name="SampleLoginTest">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220505 11:06:23.479" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" endtime="20220505 11:06:29.211" starttime="20220505 11:06:23.478"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" endtime="20220505 11:06:29.220" starttime="20220505 11:06:29.212"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id=txtUsername</arg>
+<arg>${CREDENTIALS}[username]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 11:06:29.222" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20220505 11:06:29.347" starttime="20220505 11:06:29.220"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>id=txtPassword</arg>
+<arg>${logindata}[password]</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 11:06:29.349" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
+<msg timestamp="20220505 11:06:29.396" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220505 11:06:29.456" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20220505 11:06:29.456" starttime="20220505 11:06:29.348"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>id=btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220505 11:06:29.457" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20220505 11:06:33.865" starttime="20220505 11:06:29.457"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220505 11:06:35.867" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20220505 11:06:35.868" starttime="20220505 11:06:33.866"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>id=welcome</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 11:06:35.912" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" endtime="20220505 11:06:35.969" starttime="20220505 11:06:35.868"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>link=Logout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 11:06:35.971" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" endtime="20220505 11:06:37.423" starttime="20220505 11:06:35.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220505 11:06:39.424" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20220505 11:06:39.425" starttime="20220505 11:06:37.423"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220505 11:06:39.539" starttime="20220505 11:06:39.425"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test complete</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220505 11:06:39.542" level="INFO">Test complete</msg>
+<status status="PASS" endtime="20220505 11:06:39.542" starttime="20220505 11:06:39.541"/>
+</kw>
+<doc>This is sample login test</doc>
+<status status="PASS" endtime="20220505 11:06:39.543" starttime="20220505 11:06:23.477"/>
+</test>
+<status status="PASS" endtime="20220505 11:06:39.545" starttime="20220505 11:06:23.367"/>
+</suite>
+<status status="PASS" endtime="20220505 11:06:39.549" starttime="20220505 11:06:23.363"/>
+</suite>
+<status status="PASS" endtime="20220505 11:06:39.552" starttime="20220505 11:06:23.361"/>
+</suite>
+<status status="PASS" endtime="20220505 11:06:39.556" starttime="20220505 11:06:23.339"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Test Individually" pass="1">Test Individually</stat>
+<stat fail="0" skip="0" id="s1-s1" name="Test28" pass="1">Test Individually.Test28</stat>
+<stat fail="0" skip="0" id="s1-s1-s1" name="4" pass="1">Test Individually.Test28.4</stat>
+<stat fail="0" skip="0" id="s1-s1-s1-s1" name="Testsuit2804" pass="1">Test Individually.Test28.4.Testsuit2804</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
